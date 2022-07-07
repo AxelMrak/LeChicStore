@@ -13,7 +13,7 @@ html {
 
 body {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
   background-image: url(../img/thom-bradley-mwa_nzFpnJw-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -22,11 +22,11 @@ body {
 }
 
 .header {
+  grid-column: 1 / 7;
   position: sticky; //Revisar comportamiento cuando siga con la pagina
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  grid-column: 1 / 7;
 }
 
 .header img {
@@ -45,8 +45,9 @@ body {
   list-style: none;
 }
 
-a:link, a:visited, a:active
-{
+a:link,
+a:visited,
+a:active {
   color: #000000;
   text-decoration: none;
 }
@@ -67,7 +68,6 @@ a:link, a:visited, a:active
 
 .carousel {
   grid-column: 1 / 7;
-  width: 90vw;
   height: 400px;
 }
 
@@ -90,21 +90,55 @@ a:link, a:visited, a:active
 }
 
 .categories {
-  border: 1px solid red;
-  margin-top: 70px;
-  padding: 20px;
   grid-column: 1 / 7;
+  padding: 20px;
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.categ_1 {
-  height: 500px;
-  border: 1px solid black;
+.categories div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: larger;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.8px);
+  -webkit-backdrop-filter: blur(10.8px);
+  border: 1px solid rgba(255, 255, 255, 0.63);
 }
 
-.categ_1 img {
-  width: 300px;
+.categories div button {
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.8px);
+  -webkit-backdrop-filter: blur(10.8px);
+  border: 1px;
+  padding: 7px;
+  color: white;
+  margin-top: 25px;
+}
+
+.categories div button:hover{
+ background-color: white;
+ color: black;
+ 
+}
+
+
+.categ_1 {
   height: 400px;
 }
+
+.categories div img {
+  border-radius: 10px;
+  height: 300px;
+}
+
+
