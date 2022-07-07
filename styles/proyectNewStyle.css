@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+* {
+  font-family: "Lato", sans-serif, Arial;
+}
+
+body,
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-image: url(../img/thom-bradley-mwa_nzFpnJw-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / 7;
+}
+
+.header img {
+  width: 130px;
+  height: 100px;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 15px;
+}
+
+.list-unit {
+  margin: 10px;
+  list-style: none;
+}
+
+a:link, a:visited, a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.list-unit a:hover {
+  color: white;
+}
+
+.ico {
+  padding: 10px;
+}
+
+.ico img {
+  margin: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.carousel {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / 7;
+  width: 90vw;
+  height: 400px;
+}
+
+.carousel-cell {
+  height: 100%;
+  margin-right: 20px;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel-cell-image {
+  border-radius: 10px;
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.categories {
+  border: 1px solid red;
+  margin-top: 70px;
+  padding: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.categ_1 {
+  height: 500px;
+  border: 1px solid black;
+}
+
+.categ_1 img {
+  width: 300px;
+  height: 400px;
+}
+/*# sourceMappingURL=proyectNewStyle.css.map */
