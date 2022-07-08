@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
-
 * {
   font-family: "Lato", sans-serif, Arial;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body,
@@ -23,7 +26,10 @@ body {
 
 .header {
   grid-column: 1 / 7;
-  position: sticky; //Revisar comportamiento cuando siga con la pagina
+  font-weight: 300;
+  font-size: larger;
+  position: sticky;
+  position: -webkit-sticky; //Revisar comportamiento cuando siga con la pagina
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -69,6 +75,7 @@ a:active {
 .carousel {
   grid-column: 1 / 7;
   height: 400px;
+  margin-top: 30px;
 }
 
 .carousel-cell {
@@ -95,50 +102,48 @@ a:active {
   margin-top: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .categories div {
+  height: 400px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
   font-size: larger;
   height: 400px;
-  background: rgba(255, 255, 255, 0.23);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.8px);
-  -webkit-backdrop-filter: blur(10.8px);
-  border: 1px solid rgba(255, 255, 255, 0.63);
+  max-width: 300px;
 }
 
-.categories div button {
-  background: rgba(255, 255, 255, 0.23);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.8px);
-  -webkit-backdrop-filter: blur(10.8px);
-  border: 1px;
-  padding: 7px;
-  color: white;
-  margin-top: 25px;
-}
-
-.categories div button:hover{
- background-color: white;
- color: black;
- 
-}
-
-
-.categ_1 {
-  height: 400px;
-}
-
-.categories div img {
+.img-div {
+  height: 274px;
+  width: 305px;
   border-radius: 10px;
-  height: 300px;
+  filter: blur(2px);
+  filter: brightness(50%);
 }
 
+.arrow {
+  position: relative;
+  display: none;
+  top: -200px;
+  margin: auto;
+}
 
+.more {
+  position: relative;
+  display: none;
+  top: -50%;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.title-div {
+  position: relative;
+  display: none;
+  top: -50%;
+  font-size: 40px;
+  font-weight: 400;
+}

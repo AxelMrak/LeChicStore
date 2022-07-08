@@ -3,6 +3,10 @@
   font-family: "Lato", sans-serif, Arial;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body,
 html {
   -webkit-box-sizing: border-box;
@@ -27,8 +31,10 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-column: 1 / 7;
-  position: -webkit-sticky;
+  font-weight: 300;
+  font-size: larger;
   position: sticky;
+  position: -webkit-sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,6 +93,7 @@ a:active {
   -ms-grid-column-span: 6;
   grid-column: 1 / 7;
   height: 400px;
+  margin-top: 30px;
 }
 
 .carousel-cell {
@@ -126,12 +133,13 @@ a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .categories div {
+  height: 400px;
+  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,39 +153,39 @@ a:active {
   color: white;
   font-size: larger;
   height: 400px;
-  background: rgba(255, 255, 255, 0.23);
-  border-radius: 16px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.8px);
-  -webkit-backdrop-filter: blur(10.8px);
-  border: 1px solid rgba(255, 255, 255, 0.63);
+  max-width: 300px;
 }
 
-.categories div button {
-  background: rgba(255, 255, 255, 0.23);
-  border-radius: 16px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.8px);
-  -webkit-backdrop-filter: blur(10.8px);
-  border: 1px;
-  padding: 7px;
-  color: white;
-  margin-top: 25px;
-}
-
-.categories div button:hover {
-  background-color: white;
-  color: black;
-}
-
-.categ_1 {
-  height: 400px;
-}
-
-.categories div img {
+.img-div {
+  height: 274px;
+  width: 305px;
   border-radius: 10px;
-  height: 300px;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.arrow {
+  position: relative;
+  display: none;
+  top: -200px;
+  margin: auto;
+}
+
+.more {
+  position: relative;
+  display: none;
+  top: -50%;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.title-div {
+  position: relative;
+  display: none;
+  top: -50%;
+  font-size: 40px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=proyectNewStyle.css.map */
