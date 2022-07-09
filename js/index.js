@@ -1,39 +1,29 @@
-const images = document.querySelectorAll(".categ");
-const texts = document.querySelectorAll(".more");
-const arrows = document.querySelectorAll(".arrow");
-const titles = document.querySelectorAll(".title-div");
+const sale = document.querySelector(".sale");
+const dress = document.querySelector(".dresses");
+const acc = document.querySelector(".accesories");
+const arrow1 = document.querySelector(".arrow1");
+const arrow2 = document.querySelector(".arrow2");
+const arrow3 = document.querySelector(".arrow3");
 
-
-
-function appear() {
-  texts.forEach(text => {
-    text.style.display = "initial";
-  });
-  arrows.forEach(arrow => {
-    arrow.style.display = "initial";
-  })
-  titles.forEach(title => {
-    title.style.display = "none";
-  })
-}
-
-function dissapear() {
-  texts.forEach(text => {
-    text.style.display = "none";
-  });
-  arrows.forEach(arrow => {
-    arrow.style.display = "none";
-  })
-  titles.forEach(title => {
-    title.style.display = "initial";
-  })
-}
-
-
-images.forEach(img => {
-  img.addEventListener("mouseover", appear);
-  img.addEventListener("mouseout", dissapear);
+sale.addEventListener("mouseover", () => {
+  arrow1.style.opacity="1";
 });
+sale.addEventListener("mouseleave", () => {
+  arrow1.style.opacity="0";
+})
+dress.addEventListener("mouseover", () => {
+  arrow2.style.opacity="1";
+});
+dress.addEventListener("mouseleave", () => {
+  arrow2.style.opacity="0";
+})
+acc.addEventListener("mouseover", () => {
+  arrow3.style.opacity="1";
+});
+acc.addEventListener("mouseleave", () => {
+  arrow3.style.opacity="0";
+});
+
 
 function initMap() {
   const position = {
@@ -50,7 +40,7 @@ const marker = new google.maps.Marker({
     position,
     map,
     title: "Le Chic Store"
-})
+});
 
 
 }
