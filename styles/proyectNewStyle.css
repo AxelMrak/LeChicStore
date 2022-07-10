@@ -247,4 +247,12 @@ a:active {
 .foot svg {
   margin: 30px;
 }
+
+.ig-link:hover {
+  color: #833ab4;
+}
+
+.tw-link:hover {
+  color: #1DA1F2;
+}
 /*# sourceMappingURL=proyectNewStyle.css.map */

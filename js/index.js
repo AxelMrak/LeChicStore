@@ -64,3 +64,5 @@ btn.addEventListener(`click`, ()=>{
     alert(`Ok, you can follow us in our social networks.`);
   };
 });
+
+// END NEWSLATTER
