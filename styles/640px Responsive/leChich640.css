@@ -1,0 +1,53 @@
+@media screen and (min-width: 640px) {
+  .carousel {
+    height: 70vh;
+  }
+  .categories {
+    width: 90vw;
+    height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 100px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .dresses,
+  .sale,
+  .accesories {
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+  }
+  .img-categories {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  .arrow1,
+  .arrow2,
+  .arrow3 {
+    display: none;
+  }
+  .categories-title {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+  }
+  .newslatter {
+    width: 70vw;
+    margin-bottom: 70px;
+    color: black;
+    background: rgba(255, 255, 255, 0.23);
+  }
+}
+/*# sourceMappingURL=leChich640.css.map */

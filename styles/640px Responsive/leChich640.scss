@@ -1,0 +1,51 @@
+$medium: 640px;
+
+  @media screen and (min-width: $medium) {
+    .carousel {
+      height: 70vh;
+    }
+    .categories {
+      width: 90vw;
+      height: 70vh;
+      display: flex;
+      flex-direction: row;
+      margin-top: 100px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .dresses,
+    .sale,
+    .accesories {
+      position: relative;
+      width: 30vw;
+      height: 30vh;
+    }
+
+    .img-categories {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      display: inline-block;
+    }
+
+    .arrow1,
+    .arrow2,
+    .arrow3 {
+      display: none;
+    }
+
+    .categories-title {
+      position: relative;
+      text-align: center;
+      margin: 10px;
+    }
+
+    .newslatter {
+      width: 70vw;
+      margin-bottom: 70px;
+      color: black;
+      background: rgba(255, 255, 255, 0.23);
+    }
+  }
+
