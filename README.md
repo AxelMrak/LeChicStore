@@ -10,7 +10,7 @@
 	</p>
 </div>
 
-![In progress](https://monophy.com/media/O7xsvQoMfiNVtKyAnJ/monophy.gif)
+![In progress](https://media0.giphy.com/media/kfR5iyQgmq7PoiFTAf/giphy.gif?cid=6c09b952znl2xwagztk1l50wosrpej4bw7didilw8lql8vex&rid=giphy.gif&ct=s)
 
 <h2 id="index"> <strong> Index </strong> </h2>
 
