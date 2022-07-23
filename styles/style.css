@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
-@media screen and (max-width: 450px) {
-  width: 60%;
-}
-
 * {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -90,31 +86,7 @@ a:active {
 }
 
 .carousel {
-  height: 90vh;
-}
-
-.carousel-cell {
-  height: 100%;
-  margin-right: 20px;
-  border-radius: 5px;
-  counter-increment: gallery-cell;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.carousel-cell-image {
-  border-radius: 10px;
-  display: block;
-  max-height: 100%;
-  margin: 0 auto;
-  max-width: 100%;
+  height: 20vh;
 }
 
 .categories {
@@ -259,4 +231,4 @@ a:active {
 .tw-link:hover {
   color: #1DA1F2;
 }
-/*# sourceMappingURL=proyectNewStyle.css.map */
+/*# sourceMappingURL=style.css.map */
