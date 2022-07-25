@@ -57,7 +57,7 @@
 
 <div id="project-access">
 	<h2>Project Access</h2>
-	<p>You can access here <a href="#">Web Site Link</a></p>
+	<p>You can access here <a href="https://lechic-axelmrak.netlify.app/">Web Site Link</a></p>
 </div>
 
 <div id="technologies">
