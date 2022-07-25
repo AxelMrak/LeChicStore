@@ -1,5 +1,5 @@
 <div id="title-img">
-<h1 align="center" id="title-img"> FreeGames <img src="https://img.icons8.com/fluency/48/000000/grocery-store.png"/></h1> 
+<h1 align="center" id="title-img"> LeChic Store <img src="https://img.icons8.com/fluency/48/000000/grocery-store.png"/></h1> 
 </div>
 <div id="title-img"> 
 	<p align="center">
