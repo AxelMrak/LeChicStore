@@ -4,6 +4,31 @@ $small: 400px;
 $primary-font: "Lato", sans-serif;
 $secundary-font: "Source Sans Pro", sans-serif;
 
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ebcb48;
+  border: 2px solid white;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar {
+  scroll-behavior: smooth;
+}
+
 .main-container {
   width: 100%;
   height: 100vh;
@@ -43,9 +68,6 @@ $secundary-font: "Source Sans Pro", sans-serif;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  @media screen and (max-width: $small) {
- 
-  }
 }
 
 .list-unit {
@@ -56,7 +78,8 @@ $secundary-font: "Source Sans Pro", sans-serif;
 }
 
 a:active,
-a:link {
+a:link,
+a:visited {
   color: black;
   text-decoration: none;
 }
@@ -238,6 +261,10 @@ a:hover {
   @media screen and (max-width: $small) {
     width: 100%;
   }
+}
+
+.fb-link:hover {
+  color: #3b5998;
 }
 
 .ig-link:hover {
