@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 400px) {
   .navbar {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 400px) {
   .list-unit {
-    margin-left: 2rem;
+    margin: 1rem;
   }
 }
 
