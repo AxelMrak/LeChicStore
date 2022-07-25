@@ -34,21 +34,6 @@ sale.addEventListener(`mouseleave`, () => {
   sale.style.height="40%"
   saleArrow.style.display="none"
 });
-sale.addEventListener(`touchstart`, e => {
-  sale.style.height="80%"
-  saleArrow.style.display="initial"
-});
-
-sale.addEventListener(`touchend`, () => {
-  sale.style.height="40%"
-  saleArrow.style.display="none"
-});
-
-
-
-
-
-
 
 dress.addEventListener(`mouseenter`, e => {
   dress.style.height="80%"
