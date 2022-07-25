@@ -3,6 +3,7 @@
 $small: 400px;
 $primary-font: "Lato", sans-serif;
 $secundary-font: "Source Sans Pro", sans-serif;
+
 .main-container {
   width: 100%;
   height: 100vh;
@@ -19,8 +20,21 @@ $secundary-font: "Source Sans Pro", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   padding: 1rem;
+  @media screen and (max-width: $small) {
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+  }
+}
+
+.navbar {
+  padding: 1rem;
+  font-family: $secundary-font;
+  @media screen and (max-width: $small) {
+    width: 100%;
+  }
 }
 
 .list {
@@ -33,12 +47,21 @@ $secundary-font: "Source Sans Pro", sans-serif;
 
 .list-unit {
   margin-left: 1rem;
+  @media screen and (max-width: $small) {
+    margin-left: 2rem;
+  }
 }
 
 a:active,
 a:link {
   color: black;
   text-decoration: none;
+}
+
+a:hover {
+  font-size: large;
+  text-decoration: underline;
+  text-decoration-color: #ebcb48;
 }
 
 //Styles CAROUSEL
@@ -81,13 +104,18 @@ a:link {
   justify-content: center;
   align-items: center;
   font-family: $secundary-font;
+  font-weight: 300;
   font-size: 30px;
   color: white;
   border-radius: 20px;
+  @media screen and (max-width: $small) {
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
 
 .sale {
-  background-image: url(./img/sale.jpg);
+  background-image: url(../img/sale.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: local;
@@ -96,7 +124,7 @@ a:link {
 }
 
 .dress {
-  background-image: url(./img/dress.jpg);
+  background-image: url(../img/dress.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: local;
@@ -105,7 +133,7 @@ a:link {
 }
 
 .accesories {
-  background-image: url(./img/accesories.jpg);
+  background-image: url(../img/accesories.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: local;
@@ -123,13 +151,21 @@ a:link {
   flex-direction: column;
   align-items: center;
   margin: 3rem;
+  font-family: $primary-font;
 }
+
+.maps h2 {
+  margin: 1rem;
+}
+
 #map {
   height: 300px;
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
 }
+
+//Styles newslatter
 
 .newslatter {
   grid-column: 2 / 3;
@@ -149,6 +185,26 @@ a:link {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.newslatter h2 {
+  font-family: $primary-font;
+}
+
+.label-form {
+  font-family: $secundary-font;
+  margin-top: 1rem;
+}
+
+#email-field {
+  font-family: $secundary-font;
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+//Styles footer
+
 .footer {
   grid-column: 1 / 4;
   grid-row: 8 / 9;
@@ -163,12 +219,16 @@ a:link {
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: $secundary-font;
 }
 
 .foot-svg {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 70%;
-    margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 2rem;
+  @media screen and (max-width: $small) {
+    width: 100%;
+  }
 }
