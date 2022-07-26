@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@200;300;400&display=swap");
+@import url("./styles/_mixins.scss");
+@import url("./styles/_variables.scss");
 
-$small: 400px;
-$primary-font: "Lato", sans-serif;
-$secundary-font: "Source Sans Pro", sans-serif;
+:root {
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: content-box;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -54,7 +55,7 @@ $secundary-font: "Source Sans Pro", sans-serif;
   padding: 1rem;
   font-family: $secundary-font;
   @media screen and (max-width: $small) {
-  width: 90%;
+    width: 90%;
   }
 }
 
@@ -138,32 +139,37 @@ a:hover {
 
 .sale {
   background-image: url(../img/sale.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: local;
-  background-blend-mode: soft-light;
-  background-color: rgba(0, 0, 0, 0.583);
+  @include background-div-products;
+  @include transition-div;
+}
+
+.sale:hover {
+  height: 80%;
 }
 
 .dress {
   background-image: url(../img/dress.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: local;
-  background-blend-mode: soft-light;
-  background-color: rgba(0, 0, 0, 0.583);
+  @include background-div-products;
+  @include transition-div;
+}
+
+.dress:hover {
+  height: 80%;
 }
 
 .accesories {
   background-image: url(../img/accesories.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: local;
-  background-blend-mode: soft-light;
-  background-color: rgba(0, 0, 0, 0.583);
+  @include background-div-products;
+  @include transition-div;
 }
 
-.arrow-sale, .arrow-dress, .arrow-acc {
+.accesories:hover {
+  height: 80%;
+}
+
+.arrow-sale,
+.arrow-dress,
+.arrow-acc {
   display: none;
 }
 
@@ -268,5 +274,5 @@ a:hover {
 }
 
 .tw-link:hover {
-  color: #1DA1F2;
+  color: #1da1f2;
 }

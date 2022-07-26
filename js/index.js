@@ -57,33 +57,26 @@ const accArrow = document.querySelector(`.arrow-acc`);
 
 // ALL THESE EVENT LISTENERS CAN BE RESUME IN A FUNCTION AND CAN USE JQUERY, BUT IS BETTER FOR UNDERSTAND THE FUNCTIONALITY IN EACH ONE.
 sale.addEventListener(`mouseenter`, e => {
-  sale.style.height = "80%"
   saleArrow.style.display = "initial"
 });
 
 sale.addEventListener(`mouseleave`, () => {
-  sale.style.height = "40%";
   saleArrow.style.display = "none";
-
 });
 
 dress.addEventListener(`mouseenter`, e => {
-  dress.style.height = "80%";
   dressArrow.style.display = "initial";
 });
 
 dress.addEventListener(`mouseleave`, () => {
-  dress.style.height = "40%";
   dressArrow.style.display = "none";
 });
 
 accesories.addEventListener(`mouseenter`, e => {
-  accesories.style.height = "80%";
   accArrow.style.display = "initial";
 });
 
 accesories.addEventListener(`mouseleave`, () => {
-  accesories.style.height = "40%";
   accArrow.style.display = "none";
 });
 

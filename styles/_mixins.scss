@@ -1,0 +1,13 @@
+@mixin transition-div {
+  height: 40%;
+  transition-property: height;
+  transition-duration: 2s;
+}
+
+@mixin background-div-products {
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+  background-blend-mode: soft-light;
+  background-color: rgba(0, 0, 0, 0.583);
+}
