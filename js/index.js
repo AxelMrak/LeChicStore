@@ -10,8 +10,8 @@ btn.addEventListener(`click`, () => {
   const email = document.getElementById(`email-field`).value;
   if (emailRegex.test(email)) {
     if (confirm(`Do you want suscribe to our Newslatter?`) == true) {
-      sessionStorage.setItem(`EmailTo`, `${input}`);
-      alert(`Thanks, the offers and news will send to ${input}`)
+      sessionStorage.setItem(`EmailTo`, `${email}`);
+      alert(`Thanks, the offers and news will send to ${email}`);
     } else {
       alert(`Ok, you can follow us in our social networks.`);
     };
@@ -36,28 +36,29 @@ sale.addEventListener(`mouseenter`, e => {
 });
 
 sale.addEventListener(`mouseleave`, () => {
-  sale.style.height = "40%"
-  saleArrow.style.display = "none"
+  sale.style.height = "40%";  
+  saleArrow.style.display = "none";
+
 });
 
 dress.addEventListener(`mouseenter`, e => {
-  dress.style.height = "80%"
-  dressArrow.style.display = "initial"
+  dress.style.height = "80%";
+  dressArrow.style.display = "initial";
 });
 
 dress.addEventListener(`mouseleave`, () => {
-  dress.style.height = "40%"
-  dressArrow.style.display = "none"
+  dress.style.height = "40%";
+  dressArrow.style.display = "none";
 });
 
 accesories.addEventListener(`mouseenter`, e => {
-  accesories.style.height = "80%"
-  accArrow.style.display = "initial"
+  accesories.style.height = "80%";
+  accArrow.style.display = "initial";
 });
 
 accesories.addEventListener(`mouseleave`, () => {
-  accesories.style.height = "40%"
-  accArrow.style.display = "none"
+  accesories.style.height = "40%";
+  accArrow.style.display = "none";
 });
 
 // 
@@ -89,5 +90,4 @@ function initMap() {
 initMap();
 
 // END GOOGLE MAPS API
-
 
