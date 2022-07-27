@@ -12,17 +12,21 @@ const verificationFields = () => {
 
     // Email Validator
     const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
-   
+
     // Condition of analysis for each field in the form, can be better.
     if (emailRegex.test(emailField) && nameField.length !== 0 && subjectField.length !== 0 && messageField.length !== 0) {
         Swal.fire({
             title: 'Send!',
             text: `Thanks ${nameField}, we will contact you as soon as possible to your email ${emailField}`,
-            imageUrl: 'https://i.pinimg.com/originals/2f/8b/78/2f8b78400df23ce23160c0e5f5cc9c6e.gif',
+            imageUrl: 'https://marketinginbound.cl/wp-content/uploads/2020/08/4039dbf0e5561de5f05c8c3f546a8744.gif',
             imageWidth: 400,
-            imageHeight: 200,
+            imageHeight: 300,
             imageAlt: 'Send!',
         });
+        sessionStorage.setItem(`Name`, `${nameField}`);
+        sessionStorage.setItem(`Email`, `${emailField}`);
+        sessionStorage.setItem(`Subject`, `${subjectField}`);
+        sessionStorage.setItem(`Message`, `${messageField}`);
     } else if (emailRegex.test(emailField) !== true) {
         Swal.fire({
             icon: 'error',
