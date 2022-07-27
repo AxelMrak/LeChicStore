@@ -257,6 +257,7 @@ a:hover {
   margin: 2rem;
   @media screen and (max-width: $small) {
     width: 100%;
+    justify-content: space-evenly;
   }
 }
 

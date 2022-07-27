@@ -392,6 +392,9 @@ a:hover {
 @media screen and (max-width: 400px) {
   .foot-svg {
     width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
