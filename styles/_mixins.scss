@@ -11,3 +11,12 @@
   background-blend-mode: soft-light;
   background-color: rgba(0, 0, 0, 0.583);
 }
+
+@mixin glassmorphism-background {
+  background: rgba(0, 0, 0, 0.036);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@200;300;400&display=swap");
-@import url("./styles/_mixins.scss");
-@import url("./styles/_variables.scss");
+@import "mixins";
+@import "variables";
 
 :root {
   scroll-behavior: smooth;
@@ -53,7 +53,7 @@
 
 .navbar {
   padding: 1rem;
-  font-family: $secundary-font;
+  font-family: $secondary-font;
   @media screen and (max-width: $small) {
     width: 90%;
   }
@@ -126,7 +126,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: $secundary-font;
+  font-family: $secondary-font;
   font-weight: 300;
   font-size: 30px;
   color: white;
@@ -209,12 +209,7 @@ a:hover {
   text-align: center;
   padding: 2rem;
   margin: 3rem;
-  background: rgba(0, 0, 0, 0.036);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(6.5px);
-  -webkit-backdrop-filter: blur(6.5px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  @include glassmorphism-background;
 }
 
 .newslatter h2 {
@@ -222,12 +217,12 @@ a:hover {
 }
 
 .label-form {
-  font-family: $secundary-font;
+  font-family: $secondary-font;
   margin-top: 1rem;
 }
 
 #email-field {
-  font-family: $secundary-font;
+  font-family: $secondary-font;
   margin: 1rem;
   border: 1px solid black;
   border-radius: 20px;
@@ -251,7 +246,7 @@ a:hover {
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  font-family: $secundary-font;
+  font-family: $secondary-font;
 }
 
 .foot-svg {
