@@ -103,6 +103,7 @@ a:hover {
 
 // Styles PRODUCTS
 
+
 .products {
   grid-column: 1 / 4;
   grid-row: 4 / 6;
@@ -136,7 +137,7 @@ a:hover {
     font-weight: 400;
   }
   @media screen and (max-width: $medium) {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
@@ -175,6 +176,7 @@ a:hover {
 .arrow-acc {
   display: none;
 }
+
 
 //Styles applied in Google MAPS API
 

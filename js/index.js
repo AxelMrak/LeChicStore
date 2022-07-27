@@ -55,6 +55,7 @@ const saleArrow = document.querySelector(`.arrow-sale`);
 const dressArrow = document.querySelector(`.arrow-dress`);
 const accArrow = document.querySelector(`.arrow-acc`);
 
+
 // ALL THESE EVENT LISTENERS CAN BE RESUME IN A FUNCTION AND CAN USE JQUERY, BUT IS BETTER FOR UNDERSTAND THE FUNCTIONALITY IN EACH ONE.
 sale.addEventListener(`mouseenter`, e => {
   saleArrow.style.display = "initial"
@@ -109,4 +110,3 @@ function initMap() {
 initMap();
 
 // END GOOGLE MAPS API
-
