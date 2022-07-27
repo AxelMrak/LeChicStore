@@ -200,6 +200,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .products div {
+    font-size: 17px;
+  }
+}
+
 .sale {
   background-image: url(../img/sale.jpg);
   background-position: center;
