@@ -34,6 +34,12 @@
 }
 
 .head {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.349);
+  z-index: 1;
+  height: min-content;
   grid-column: 1 / 5;
   grid-row: 0 / 1;
   display: flex;
@@ -110,9 +116,9 @@
   width: 100%;
 }
 
-.sale,
-.dresses,
-.accessories {
+#sale,
+#dresses,
+#accessories {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -123,6 +129,10 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0.5rem;
   transition: border 2s;
 }
@@ -136,17 +146,59 @@
   padding: 1rem;
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-body h5 {
-  margin: 1rem;
+.bag {
+  display: none;
 }
 
 #search-field {
   display: none;
+}
+
+a:active,
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+
+.footer {
+  grid-column: 1 / 5;
+  grid-row: 5 / 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(252, 252, 252, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: $secondary-font;
+}
+
+.foot-svg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 2rem;
+  @media screen and (max-width: $small) {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+.fb-link:hover {
+  color: #3b5998;
+}
+
+.ig-link:hover {
+  color: #833ab4;
+}
+
+.tw-link:hover {
+  color: #1da1f2;
 }
