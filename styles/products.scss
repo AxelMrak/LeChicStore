@@ -75,7 +75,7 @@
   z-index: 0;
 }
 
-.main-title { 
+.main-title {
   font-family: $primary-font;
   font-size: 300%;
   text-align: center;
@@ -107,13 +107,14 @@
   padding: 1rem;
 }
 
-.products-title {
+.products-main h2 {
   text-align: center;
-  align-self: flex-start;
 }
 
-.categories {
-  width: 100%;
+.products-title {
+  padding: 1rem;
+  width: 90%;
+  border-bottom: 1px solid #ebcb48;
 }
 
 #sale,
@@ -125,42 +126,29 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem;
-  margin: 1rem;
 }
 
 .card {
+  font-family: $primary-font;
+  overflow: hidden;
+  width: max-content;
+  height: 50%;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin: 0.5rem;
   transition: border 2s;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-
-.card-body  h5{
+.card h5 {
   margin: 1rem;
 }
 
-.card-body img {
-  width: 219px;
-  height: 300px;
-}
-
 .card:hover {
-  border: 2px solid #ebcb48;
-}
-
-.cat-title {
-  border-bottom: 1px solid #ebcb48;
-  padding: 1rem;
+  border-color: #ebcb48;
 }
 
 #search-field {
@@ -215,3 +203,6 @@ a:visited {
   color: #1da1f2;
 }
 
+.bag {
+  display: none;
+}
