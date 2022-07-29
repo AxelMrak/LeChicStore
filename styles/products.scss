@@ -137,6 +137,23 @@
   transition: border 2s;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.card-body  h5{
+  margin: 1rem;
+}
+
+.card-body img {
+  width: 219px;
+  height: 300px;
+}
+
 .card:hover {
   border: 2px solid #ebcb48;
 }
@@ -144,10 +161,6 @@
 .cat-title {
   border-bottom: 1px solid #ebcb48;
   padding: 1rem;
-}
-
-.bag {
-  display: none;
 }
 
 #search-field {

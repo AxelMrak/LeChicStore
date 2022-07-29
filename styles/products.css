@@ -4,7 +4,8 @@
 }
 
 * {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   padding: 0;
   margin: 0;
 }
@@ -24,9 +25,12 @@
 }
 
 .main-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto auto;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto auto;
   grid-gap: 2rem;
 }
 
@@ -39,12 +43,23 @@
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  grid-column: 1/5;
-  grid-row: 0/1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  grid-row: 0 / 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem;
 }
 
@@ -54,23 +69,42 @@
 
 .video-container {
   width: 100%;
-  grid-column: 1/5;
-  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
   border-radius: 20px;
 }
 
 .video {
-  filter: brightness(0.5);
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
 }
 
 .main-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  grid-column: 2/4;
-  grid-row: 2/3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
   z-index: 0;
 }
 
@@ -111,15 +145,21 @@
     opacity: 0;
   }
 }
+
 .products-main {
-  grid-column: 1/5;
-  grid-row: 3/5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3 / 5;
   padding: 1rem;
 }
 
 .products-title {
   text-align: center;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .categories {
@@ -129,22 +169,67 @@
 #sale,
 #dresses,
 #accessories {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 1rem;
   margin: 1rem;
 }
 
 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0.5rem;
+  -webkit-transition: border 2s;
   transition: border 2s;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.card-body h5 {
+  margin: 1rem;
+}
+
+.card-body img {
+  width: 219px;
+  height: 300px;
 }
 
 .card:hover {
@@ -154,10 +239,6 @@
 .cat-title {
   border-bottom: 1px solid #ebcb48;
   padding: 1rem;
-}
-
-.bag {
-  display: none;
 }
 
 #search-field {
@@ -172,15 +253,29 @@ a:visited {
 }
 
 .footer {
-  grid-column: 1/5;
-  grid-row: 5/7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  grid-row: 5 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   background: rgba(252, 252, 252, 0.7);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
@@ -189,16 +284,26 @@ a:visited {
 }
 
 .foot-svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 70%;
   margin: 2rem;
 }
+
 @media screen and (max-width: 400px) {
   .foot-svg {
     width: 100%;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -212,4 +317,5 @@ a:visited {
 
 .tw-link:hover {
   color: #1da1f2;
-}/*# sourceMappingURL=products.css.map */
+}
+/*# sourceMappingURL=products.css.map */
