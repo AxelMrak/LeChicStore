@@ -89,7 +89,7 @@ const eur = `€`;
 // Get to DOM
 
 const saleDOM = document.getElementById(`sale`);
-const total = document.getElementById(`total`)
+
 //FUNCION START PRODUCTS DIVS
 const startProducts = () => {
 
@@ -159,6 +159,7 @@ const startProducts = () => {
         // Make cards of bootstrap classes
         const card = document.createElement(`div`);
         card.classList.add(`card`);
+        card.classList.add(`addItem`)
         const cardBody = document.createElement(`div`);
         cardBody.classList.add(`card-body`);
         const titleCard = document.createElement(`h5`);
@@ -185,16 +186,22 @@ const startProducts = () => {
 
 };
 
-
 const cartList = document.getElementById(`list-products`) ;
+const total = document.getElementById(`total`);
+const removeBtn = document.getElementById(`remove-btn`);
 let cart = [];
 
+const addProducts = event => {
+    e.preventDefaul();
 
-const addProduct = event => {
-    Array.from(productsAccessories).forEach(item => {
-    total.replaceWith(item.price);
-    })
-    
+    if (e.target.classList.contains(`addItem`)) {
+        const item = e.target.parentElement.parentElement;
+        this.ReadData(item);
+    }
+};
+
+const readData = (item) => {
+    const infoItem = {
+        
+    }
 }
-
-startProducts();

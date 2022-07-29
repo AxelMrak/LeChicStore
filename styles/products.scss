@@ -70,7 +70,7 @@
   justify-content: center;
   align-self: center;
   align-items: center;
-  grid-column: 2 / 4;
+  grid-column: 1 / 5;
   grid-row: 2 / 3;
   z-index: 0;
 }
@@ -174,7 +174,6 @@ a:visited {
   text-decoration: none;
 }
 
-
 .footer {
   grid-column: 1 / 5;
   grid-row: 5 / 7;
@@ -215,3 +214,4 @@ a:visited {
 .tw-link:hover {
   color: #1da1f2;
 }
+
