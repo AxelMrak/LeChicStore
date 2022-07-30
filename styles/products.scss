@@ -34,9 +34,6 @@
 }
 
 .head {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
   background-color: rgba(255, 255, 255, 0.349);
   z-index: 1;
   height: min-content;
@@ -52,6 +49,26 @@
 .svg-head {
   padding: 1rem;
 }
+
+#bag {
+  right: -30vw;
+  text-align: center;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: right 2s;
+}
+
+.list-group-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .video-container {
   width: 100%;
@@ -219,6 +236,5 @@ a:visited {
   color: #1da1f2;
 }
 
-#bag {
-display: none;
-}
+
+
