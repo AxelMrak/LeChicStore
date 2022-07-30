@@ -163,7 +163,6 @@
 .products-title {
   padding: 1rem;
   width: 90%;
-  border-bottom: 1px solid #ebcb48;
 }
 
 #sale,
@@ -184,16 +183,14 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 1rem;
+  margin: 1rem;
 }
 
 .card {
   font-family: "Lato", sans-serif;
-  overflow: hidden;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: 50%;
-  padding-bottom: 1rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,23 +198,52 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0.5rem;
   -webkit-transition: border 2s;
   transition: border 2s;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+  overflow: hidden;
 }
 
-.card h5 {
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: unset;
+  padding-bottom: 1rem;
+}
+
+.card-body h5 {
   margin: 1rem;
 }
 
+.card-body img {
+  width: 219px;
+  height: 300px;
+}
+
 .card:hover {
-  border-color: #ebcb48;
+  border: 2px solid #ebcb48;
+}
+
+.cat-title {
+  border-bottom: 1px solid #ebcb48;
+  padding: 1rem;
 }
 
 #search-field {
@@ -298,7 +324,7 @@ a:visited {
   color: #1da1f2;
 }
 
-.bag {
+#bag {
   display: none;
 }
 /*# sourceMappingURL=products.css.map */
