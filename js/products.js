@@ -282,7 +282,7 @@ updateCart()
 const appearBagInDOM = event => {
     // -30vw OCULTO;
     // 0px VISIBLE
-
+console.log(event);
 };
 
 bagIcoDOM.addEventListener(`click`, appearBagInDOM);
