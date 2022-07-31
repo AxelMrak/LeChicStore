@@ -93,6 +93,11 @@
   font-weight: 300;
   color: white;
 }
+@media screen and (max-width: 400px) {
+  .main-title {
+    font-size: 200%;
+  }
+}
 
 .arrow {
   margin-top: 2rem;
@@ -104,6 +109,11 @@
           animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+@media screen and (max-width: 400px) {
+  .arrow {
+    margin-top: 1rem;
+  }
 }
 
 @-webkit-keyframes arrowAnim {
