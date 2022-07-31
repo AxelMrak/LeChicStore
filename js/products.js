@@ -93,7 +93,6 @@ let cart = [];
 const eur = `€`;
 
 // Get to DOM 
-const cartAppear = document.getElementById(`bag`);
 const bagDOM = document.getElementById(`cart-container`);
 const totalDOM = document.getElementById(`total`);
 const btnRemoveDOM = document.getElementById(`remove-btn`)
@@ -104,22 +103,22 @@ const bagIcoDOM = document.getElementById(`bag-icon`);
 
 // Filters in array PRODUCTS 
 const saleProducts = products.filter(value => {
-        if (value.cat == `sale`) {
-            return value
-        }
-    });
-    const dressProducts = products.filter(value => {
-        if (value.cat == `dress`) {
-            return value;
-        }
-    });
-    const accProducts = products.filter(value => {
-        if (value.cat == `acc`) {
-            return value;
-        }
-    });
+    if (value.cat == `sale`) {
+        return value
+    }
+});
+const dressProducts = products.filter(value => {
+    if (value.cat == `dress`) {
+        return value;
+    }
+});
+const accProducts = products.filter(value => {
+    if (value.cat == `acc`) {
+        return value;
+    }
+});
 
-    
+
 //FUNCTIONS
 
 const startProducts = () => {
@@ -150,7 +149,7 @@ const startProducts = () => {
         cardBody.appendChild(btnProduct);
         card.appendChild(cardBody);
         saleDOM.appendChild(card);
-    }); 
+    });
 
     dressProducts.forEach(info => {
         // Make cards of bootstrap classes
@@ -179,7 +178,7 @@ const startProducts = () => {
         cardBody.appendChild(btnProduct);
         card.appendChild(cardBody);
         dressDOM.appendChild(card);
-    }); 
+    });
 
     accProducts.forEach(info => {
         // Make cards of bootstrap classes
@@ -208,9 +207,9 @@ const startProducts = () => {
         cardBody.appendChild(btnProduct);
         card.appendChild(cardBody);
         accDOM.appendChild(card);
-    }); 
-    
-   
+    });
+
+
 
 };
 
@@ -231,22 +230,24 @@ const updateCart = () => {
 
         const itemsNumber = cart.reduce((total, itemId) => {
             return itemId === item ? total += 1 : total;
-        }, 0)
+        }, 0);
 
+        const listMain =document.createElement(`ul`);
         const myList = document.createElement(`li`);
         myList.classList.add(`list-group-item`, `text-right`, `mx-2`);
-        myList.textContent = `${itemsNumber} x ${myItem[0].name} - ${myItem[0].price}${eur}`
+        myList.textContent = `${itemsNumber} x ${myItem[0].name} - ${myItem[0].price}${eur}`;
 
         const btnRemove = document.createElement(`button`);
         btnRemove.classList.add(`btn`, `btn-danger`, `mx-5`);
         btnRemove.textContent = `X`;
         btnRemove.style.marginLeft = `1rem`;
-        btnRemove.style.margin = `1rem`
+        btnRemove.style.margin = `1rem`;
         btnRemove.dataset.item = item;
         btnRemove.addEventListener(`click`, removeItem)
 
         myList.appendChild(btnRemove);
-        bagDOM.appendChild(myList);
+        listMain.appendChild(myList);
+        bagDOM.appendChild(listMain);
     });
     totalDOM.textContent = calculateTotal();
 };
@@ -277,13 +278,30 @@ const emptyCart = () => {
 
 btnRemoveDOM.addEventListener(`click`, emptyCart)
 startProducts();
-updateCart()
+updateCart();
 
-const appearBagInDOM = event => {
-    // -30vw OCULTO;
-    // 0px VISIBLE
-console.log(event);
+
+
+const confirmBtn = document.getElementById(`confirm-btn`);
+
+
+const confirmBuy = event => {
+    event.preventDefault();
+    if (totalDOM.textContent == 0) {
+        Swal.fire({
+            icon: `error`,
+            title: `Your cart is empty`,
+            text: `Please, add some product.`,
+        });
+    } else {
+        Swal.fire({
+            icon: `success`,
+            title: `Buy done!!`,
+            text: `Your order will be ready soon.`,
+        });
+        emptyCart();
+    };
 };
 
-bagIcoDOM.addEventListener(`click`, appearBagInDOM);
 
+confirmBtn.addEventListener(`click`, confirmBuy);

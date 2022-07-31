@@ -18,7 +18,7 @@
     <div class="main-container">
       <!-- START HEAD -->
       <header class="head">
-        <a href="#video-container">
+        <a href="../index.html">
           <img
             draggable="false"
             src="../img/logo.png"
@@ -26,10 +26,10 @@
             alt="logo"
             width="100"
         /></a>
-        <div class="svg-head">
-         <svg id="bag-icon"
-            width="24"
-            height="24"
+          <a href="#bag"><svg
+            id="bag-icon"
+            width="30"
+            height="30"
             stroke-width="1.5"
             viewBox="0 0 24 24"
             fill="none"
@@ -46,39 +46,8 @@
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
-            />
+            /></a>
           </svg>
-          <!-- <input type="search" name="search" id="search-field" /> -->
-          <svg
-            width="24"
-            height="24"
-            stroke-width="1.5"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M15.5 15.5L19 19"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M5 11C5 14.3137 7.68629 17 11 17C12.6597 17 14.1621 16.3261 15.2483 15.237C16.3308 14.1517 17 12.654 17 11C17 7.68629 14.3137 5 11 5C7.68629 5 5 7.68629 5 11Z"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <div id="bag">
-            <h2>Shopping Cart</h2>
-            <div id="cart-container"></div>
-            <p class="text-right">Total: <span id="total"></span>&euro;</p>
-            <button id="remove-btn" class="btn btn-outline-danger">
-              Empty
-            </button>
-          </div>
-        </div>
       </header>
       <!-- END HEAD -->
       <!-- START MAIN -->
@@ -127,15 +96,29 @@
         </div>
       </div>
       <!-- END PRODUCTS -->
-
+      <!-- BAG START -->
+      <div id="bag">
+        <h2>Shopping Cart</h2>
+        <div id="cart-container"></div>
+        <p class="text-right container-total">
+          Total: <span id="total"></span>&euro;
+        </p>
+        <div class="btn-">
+          <button id="confirm-btn" class="btn btn-outline-success">
+            Confirm buy
+          </button>
+          <button id="remove-btn" class="btn btn-outline-danger">Empty</button>
+        </div>
+      </div>
+      <!-- END BAG -->
       <!-- Start Footer -->
       <footer class="footer">
         <div class="foot-svg">
           <a class="fb-link" href="https://www.facebook.com/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
+              width="50"
+              height="50"
               fill="currentColor"
               class="bi bi-facebook"
               viewBox="0 0 16 16"
@@ -147,8 +130,8 @@
           <a class="ig-link" href="https://www.instagram.com/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
+              width="50"
+              height="50"
               fill="currentColor"
               class="bi bi-instagram"
               viewBox="0 0 16 16"
@@ -160,8 +143,8 @@
           <a class="tw-link" href="https://twitter.com/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="100"
-              height="100"
+              width="50"
+              height="50"
               fill="currentColor"
               class="bi bi-twitter"
               viewBox="0 0 16 16"
@@ -184,7 +167,6 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/products.js"></script>
     <!--  -->

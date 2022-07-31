@@ -32,11 +32,8 @@
   grid-template-rows: auto auto auto auto auto auto;
   grid-gap: 2rem;
 }
-
 .head {
-  background-color: rgba(255, 255, 255, 0.349);
-  z-index: 1;
-  height: min-content;
+  width: 90%;
   grid-column: 1 / 5;
   grid-row: 0 / 1;
   display: flex;
@@ -44,31 +41,29 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  @media screen and (max-width: $small) {
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+  }
 }
 
-.svg-head {
-  padding: 1rem;
-}
 
-#bag {
-  right: -30vw;
-  text-align: center;
-  background-color: white;
+#bag-icon {
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: right 2s;
+  bottom: 5%;
+  right: 2%;
+  padding: 0.5rem;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: border 1s;
 }
 
-.list-group-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#bag-icon:hover {
+  border: 2px solid #ebcb48;
 }
-
 
 .video-container {
   width: 100%;
@@ -184,9 +179,7 @@
   padding: 1rem;
 }
 
-#search-field {
-  display: none;
-}
+
 
 a:active,
 a:link,
@@ -195,9 +188,44 @@ a:visited {
   text-decoration: none;
 }
 
+#bag {
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  @include glassmorphism-background;
+}
+
+#bag h2 {
+  margin: 1rem;
+}
+
+.list-group-item {
+  max-width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #00000059;
+}
+
+.container-total {
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+#remove-btn {
+  margin: 1rem;
+}
+
 .footer {
   grid-column: 1 / 5;
-  grid-row: 5 / 7;
+  grid-row: 6 / 7;
   display: flex;
   flex-direction: column;
   justify-content: center;
