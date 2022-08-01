@@ -232,7 +232,7 @@ const updateCart = () => {
             return itemId === item ? total += 1 : total;
         }, 0);
 
-        const listMain =document.createElement(`ul`);
+        const listMain = document.createElement(`ul`);
         const myList = document.createElement(`li`);
         myList.classList.add(`list-group-item`, `text-right`, `mx-2`);
         myList.textContent = `${itemsNumber} x ${myItem[0].name} - ${myItem[0].price}${eur}`;
@@ -276,14 +276,6 @@ const emptyCart = () => {
     updateCart();
 }
 
-btnRemoveDOM.addEventListener(`click`, emptyCart)
-startProducts();
-updateCart();
-
-
-
-const confirmBtn = document.getElementById(`confirm-btn`);
-
 
 const confirmBuy = event => {
     event.preventDefault();
@@ -303,5 +295,15 @@ const confirmBuy = event => {
     };
 };
 
+//END FUNCTIONS
 
+
+//Functions initialized and listener
+btnRemoveDOM.addEventListener(`click`, emptyCart)
+startProducts();
+updateCart();
+
+
+//Confirm buy event
+const confirmBtn = document.getElementById(`confirm-btn`);
 confirmBtn.addEventListener(`click`, confirmBuy);
