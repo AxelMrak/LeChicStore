@@ -38,7 +38,7 @@
 
 <div id="project-description">
 	<h2>Proyect Description</h2>
-	<p> This webpage simulate a launch site for an online store. Here you will can watch different categories of the brand and his ubication through the Google Maps API. 
+	<p> This webpage simulate a launch site for an online store. Here you will can watch different categories of the brand and his ubication through the Google Maps API for ubication of Store. 
 	</p>	
 </div>
 
