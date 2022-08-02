@@ -32,6 +32,9 @@
   grid-template-rows: auto auto auto auto auto auto;
   grid-gap: 2rem;
 }
+
+//Styles HEADER
+
 .head {
   width: 90%;
   grid-column: 1 / 5;
@@ -64,11 +67,13 @@
   border: 2px solid #ebcb48;
 }
 
+//Styles main VIDEO AND TITLE
+
 .video-container {
   width: 100%;
   grid-column: 1 / 5;
   grid-row: 2 / 3;
-  border-radius: 20px; 
+  border-radius: 20px;
 }
 
 .video {
@@ -84,7 +89,6 @@
   grid-column: 1 / 5;
   grid-row: 2 / 3;
   z-index: 0;
- 
 }
 
 .main-title {
@@ -118,6 +122,8 @@
     opacity: 0;
   }
 }
+
+//Styles products
 
 .products-main {
   grid-column: 1 / 5;
@@ -167,7 +173,7 @@
   padding-bottom: 1rem;
 }
 
-.card-body  h5{
+.card-body h5 {
   margin: 1rem;
 }
 
@@ -185,7 +191,7 @@
   padding: 1rem;
 }
 
-
+//Styles general for links
 
 a:active,
 a:link,
@@ -193,6 +199,8 @@ a:visited {
   color: black;
   text-decoration: none;
 }
+
+//Styles for bag
 
 #bag {
   grid-column: 2 / 4;
@@ -228,6 +236,8 @@ a:visited {
 #remove-btn {
   margin: 1rem;
 }
+
+//Styles FOOTER
 
 .footer {
   grid-column: 1 / 5;
@@ -269,6 +279,3 @@ a:visited {
 .tw-link:hover {
   color: #1da1f2;
 }
-
-
-
