@@ -33,7 +33,7 @@
       grid-template-columns: auto auto auto;
   -ms-grid-rows: auto auto auto auto auto auto auto auto auto;
       grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  row-gap: 4rem;
+  row-gap: 2rem;
 }
 
 .header {
@@ -408,27 +408,5 @@ a:hover {
 
 .tw-link:hover {
   color: #1da1f2;
-}
-
-@-webkit-keyframes slice {
-  from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  to {
-    -webkit-transform: translateX(initial);
-            transform: translateX(initial);
-  }
-}
-
-@keyframes slice {
-  from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  to {
-    -webkit-transform: translateX(initial);
-            transform: translateX(initial);
-  }
 }
 /*# sourceMappingURL=style.css.map */
