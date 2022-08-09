@@ -8,7 +8,6 @@ divsAnimated.forEach(div => {
     let screenHeight = window.innerHeight / 3; //Height of window
     if (positionDiv < screenHeight) { 
       div.style.transition = `all 0.5s`; //Set transition for smooth effect
-      div.style.animation = `slice 1s`; //Appear of left
       div.style.opacity = `1`; //Appear
     } else {
       div.style.transition = `all 1s`;

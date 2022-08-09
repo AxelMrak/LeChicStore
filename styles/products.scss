@@ -312,12 +312,3 @@ a:visited {
   color: #1da1f2;
 }
 
-//Animation JS
-@keyframes slice {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(initial);
-  }
-}

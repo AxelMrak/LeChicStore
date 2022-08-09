@@ -32,7 +32,7 @@
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  row-gap: 4rem;
+  row-gap: 2rem;
 }
 
 //Styles HEADER
@@ -273,12 +273,3 @@ a:hover {
   color: #1da1f2;
 }
 
-//Animation JS
-@keyframes slice {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(initial);
-  }
-}
