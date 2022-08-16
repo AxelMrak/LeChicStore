@@ -46,7 +46,7 @@
   padding: 1rem;
   @media screen and (max-width: $small) {
     flex-direction: column;
-    justify-content: baseline;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -54,9 +54,6 @@
 .navbar {
   padding: 1rem;
   font-family: $secondary-font;
-  @media screen and (max-width: $small) {
-    width: 90%;
-  }
 }
 
 .list {
@@ -275,3 +272,4 @@ a:hover {
 .tw-link:hover {
   color: #1da1f2;
 }
+

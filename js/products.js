@@ -307,3 +307,22 @@ updateCart();
 //Confirm buy event
 const confirmBtn = document.getElementById(`confirm-btn`);
 confirmBtn.addEventListener(`click`, confirmBuy);
+
+//Divs appear in scroll
+
+const divsAnimated = document.querySelectorAll(`.animation-appear`);
+
+divsAnimated.forEach(div => {
+  const appearDiv = event => {
+    let positionDiv = div.getBoundingClientRect().top; //Distance div to top
+    let screenHeight = window.innerHeight / 3; //Height of window
+    if (positionDiv < screenHeight) { 
+      div.style.transition = `all 0.5s`; //Set transition for smooth effect
+      div.style.opacity = `1`; //Appear
+    } else {
+      div.style.transition = `all 1s`;
+      div.style.opacity = `0`;
+    }
+  };
+  window.addEventListener(`scroll`, appearDiv) //Event Listener
+});

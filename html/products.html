@@ -48,13 +48,22 @@
               stroke-linejoin="round"
             /></a>
           </svg>
+          <nav class="navbar">
+            <ul class="list">
+              <li class="list-unit"><a href="../index.html">Home</a></li>
+              <li class="list-unit">
+                <a href="#sale">Products</a>
+              </li>
+              <li class="list-unit"><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
       </header>
       <!-- END HEAD -->
       <!-- START MAIN -->
       <main class="video-container" id="video-container">
         <video class="video" width="100%" height="100%" preload="auto" autoplay loop muted defaultMuted playsinLine >
-          <source src="../video/products-video.mp4" type="video/mp4" />
-          <source src="../video/products-video.webm" type="video/webm" />
+          <source src="../video/products-video.mp4" type="video/mp4"/>
+          <source src="../video/products-video.webm" type="video/webm"/>
         </video>
       </main>
       <div class="main-title-container">
@@ -85,7 +94,7 @@
       </div>
       <!-- END MAIN -->
       <!-- Start Products -->
-      <div class="products-main">
+      <div class="products-main animation-appear">
         <h2 class="products-title">Our products</h2>
         <div class="categories" id="categories">
           <h3 class="cat-title">Sale</h3>
@@ -98,7 +107,7 @@
       </div>
       <!-- END PRODUCTS -->
       <!-- BAG START -->
-      <div id="bag">
+      <div id="bag" class="animation-appear">
         <h2>Shopping Cart</h2>
         <div id="cart-container"></div>
         <p class="text-right container-total">
