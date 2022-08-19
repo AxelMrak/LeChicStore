@@ -31,6 +31,11 @@
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto auto auto;
   row-gap: 2rem;
+  @media screen and (min-width: $xl) {
+    max-width: 80vw;
+    margin: 0 auto;
+    font-size: 70px;
+  }
 }
 
 //Styles HEADER
@@ -50,6 +55,13 @@
   }
 }
 
+.head img {
+  @media screen and (min-width: $xl) {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .navbar {
   padding: 1rem;
   font-family: $secondary-font;
@@ -61,6 +73,9 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  @media screen and (min-width: $xl) {
+    column-gap: 2rem;
+  }
 }
 
 .list-unit {
@@ -93,6 +108,11 @@ a:visited {
   border: 1px solid black;
   border-radius: 50%;
   transition: border 1s;
+  @media screen and (min-width: $xl) {
+    width: 200px;
+    height: 200px;
+    padding: 2rem;
+  }
 }
 
 #bag-icon:hover {
@@ -143,6 +163,10 @@ a:visited {
   @media screen and (max-width: $small) {
     margin-top: 1rem;
   }
+  @media screen and (min-width: $xl) {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 @keyframes arrowAnim {
@@ -170,6 +194,9 @@ a:visited {
 .products-title {
   padding: 1rem;
   width: 90%;
+  @media screen and (min-width: $xl) {
+    font-size: 100px;
+  }
 }
 
 #sale,
@@ -194,6 +221,11 @@ a:visited {
   margin: 0.5rem;
   transition: border 2s;
   overflow: hidden;
+  @media screen and (min-width: $xl) {
+    width: min-content;
+    height: min-content;
+    font-size: 60px;
+  }
 }
 
 .card-body {
@@ -203,15 +235,26 @@ a:visited {
   align-items: center;
   padding: unset;
   padding-bottom: 1rem;
+  @media screen and (min-width: $xl) {
+    text-align: center;
+  }
 }
 
 .card-body h5 {
   margin: 1rem;
+  @media screen and (min-width: $xl) {
+    font-size: 60px;
+    margin: 2rem;
+  }
 }
 
 .card-body img {
   width: 219px;
   height: 300px;
+  @media screen and (min-width: $xl) {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 .card:hover {
@@ -221,6 +264,19 @@ a:visited {
 .cat-title {
   border-bottom: 1px solid #ebcb48;
   padding: 1rem;
+  @media screen and (min-width: $xl) {
+    font-size: 100px;
+    border-bottom: 5px solid #ebcb48;
+  }
+}
+
+.card button {
+  @media screen and (min-width: $xl) {
+   font-size: 60px;
+   padding: 2rem;
+   margin: 1rem;
+   border-radius: 10px;
+  }
 }
 
 //Styles general for links
@@ -244,10 +300,18 @@ a:visited {
   align-items: center;
   padding: 1rem;
   @include glassmorphism-background;
+  @media screen and (min-width: $xl) {
+    width: 50vw;
+    height: 60vh;
+    font-size: 100px;
+  }
 }
 
 #bag h2 {
   margin: 1rem;
+  @media screen and (min-width: $xl) {
+    font-size: 150px;
+  }
 }
 
 .list-group-item {
@@ -269,6 +333,15 @@ a:visited {
   margin: 1rem;
 }
 
+#bag button {
+  @media screen and (min-width: $xl) {
+    width: 200px;
+    height: 150px;
+    font-size: 50px;
+  }
+}
+
+
 //Styles FOOTER
 
 .footer {
@@ -286,6 +359,9 @@ a:visited {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   font-family: $secondary-font;
+  @media screen and (min-width: $xl) {
+    margin-top: 4rem;
+  }
 }
 
 .foot-svg {

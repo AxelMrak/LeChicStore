@@ -315,7 +315,7 @@ const divsAnimated = document.querySelectorAll(`.animation-appear`);
 divsAnimated.forEach(div => {
   const appearDiv = event => {
     let positionDiv = div.getBoundingClientRect().top; //Distance div to top
-    let screenHeight = window.innerHeight / 3; //Height of window
+    let screenHeight = window.innerHeight / 1.5; //Height of window
     if (positionDiv < screenHeight) { 
       div.style.transition = `all 0.5s`; //Set transition for smooth effect
       div.style.opacity = `1`; //Appear
