@@ -29,6 +29,13 @@
   grid-template-rows: auto auto auto auto auto auto;
   row-gap: 2rem;
 }
+@media screen and (min-width: 3000px) {
+  .main-container {
+    max-width: 80vw;
+    margin: 0 auto;
+    font-size: 70px;
+  }
+}
 
 .head {
   grid-column: 1/5;
@@ -44,6 +51,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .head img {
+    width: 300px;
+    height: 300px;
+
   }
 }
 
@@ -58,6 +74,12 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
+}
+@media screen and (min-width: 3000px) {
+  .list {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
 }
 
 .list-unit {
@@ -93,6 +115,13 @@ a:visited {
   border: 1px solid black;
   border-radius: 50%;
   transition: border 1s;
+}
+@media screen and (min-width: 3000px) {
+  #bag-icon {
+    width: 200px;
+    height: 200px;
+    padding: 2rem;
+  }
 }
 
 #bag-icon:hover {
@@ -150,6 +179,12 @@ a:visited {
     margin-top: 1rem;
   }
 }
+@media screen and (min-width: 3000px) {
+  .arrow {
+    width: 300px;
+    height: 300px;
+  }
+}
 
 @-webkit-keyframes arrowAnim {
   100% {
@@ -182,6 +217,11 @@ a:visited {
   padding: 1rem;
   width: 90%;
 }
+@media screen and (min-width: 3000px) {
+  .products-title {
+    font-size: 100px;
+  }
+}
 
 #sale,
 #dresses,
@@ -208,6 +248,17 @@ a:visited {
   transition: border 2s;
   overflow: hidden;
 }
+@media screen and (min-width: 3000px) {
+  .card {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    font-size: 60px;
+  }
+}
 
 .card-body {
   display: flex;
@@ -217,14 +268,31 @@ a:visited {
   padding: unset;
   padding-bottom: 1rem;
 }
+@media screen and (min-width: 3000px) {
+  .card-body {
+    text-align: center;
+  }
+}
 
 .card-body h5 {
   margin: 1rem;
+}
+@media screen and (min-width: 3000px) {
+  .card-body h5 {
+    font-size: 60px;
+    margin: 2rem;
+  }
 }
 
 .card-body img {
   width: 219px;
   height: 300px;
+}
+@media screen and (min-width: 3000px) {
+  .card-body img {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 .card:hover {
@@ -234,6 +302,21 @@ a:visited {
 .cat-title {
   border-bottom: 1px solid #ebcb48;
   padding: 1rem;
+}
+@media screen and (min-width: 3000px) {
+  .cat-title {
+    font-size: 100px;
+    border-bottom: 5px solid #ebcb48;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .card button {
+    font-size: 60px;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+  }
 }
 
 a:active,
@@ -259,9 +342,21 @@ a:visited {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+@media screen and (min-width: 3000px) {
+  #bag {
+    width: 50vw;
+    height: 60vh;
+    font-size: 100px;
+  }
+}
 
 #bag h2 {
   margin: 1rem;
+}
+@media screen and (min-width: 3000px) {
+  #bag h2 {
+    font-size: 150px;
+  }
 }
 
 .list-group-item {
@@ -283,6 +378,14 @@ a:visited {
   margin: 1rem;
 }
 
+@media screen and (min-width: 3000px) {
+  #bag button {
+    width: 200px;
+    height: 150px;
+    font-size: 50px;
+  }
+}
+
 .footer {
   grid-column: 1/5;
   grid-row: 6/7;
@@ -298,6 +401,11 @@ a:visited {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   font-family: "Source Sans Pro", sans-serif;
+}
+@media screen and (min-width: 3000px) {
+  .footer {
+    margin-top: 4rem;
+  }
 }
 
 .foot-svg {

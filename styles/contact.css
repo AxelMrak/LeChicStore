@@ -31,6 +31,7 @@
   row-gap: 2rem;
 }
 
+
 .head {
   grid-column: 1/4;
   grid-row: 1/1;
@@ -47,11 +48,52 @@
     align-items: center;
   }
 }
+
+@media screen and (min-width: 3000px) {
+  .main-container {
+    max-width: 90vw;
+    margin: 0 auto;
+    row-gap: 8rem;
+  }
+}
+
+.head {
+  grid-column: 1/4;
+  grid-row: 1/1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+@media screen and (max-width: 650px) {
+  .head {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .head {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+  }
+}
+@media screen and (min-width: 3000px) {
+  .head {
+    font-size: 60px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .head img {
+    width: 300px;
+    height: 300px;
+
   }
 }
 
@@ -74,6 +116,12 @@
 @media screen and (max-width: 650px) {
   .list-unit {
     margin: 1rem;
+  }
+}
+@media screen and (min-width: 3000px) {
+  .list-unit {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
   }
 }
 
@@ -125,17 +173,33 @@ a:hover {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+@media screen and (min-width: 3000px) {
+  .form {
+    width: 60vw;
+    margin: 0 auto;
+  }
+}
 
 .title-form {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   margin: 1rem;
 }
+@media screen and (min-width: 3000px) {
+  .title-form {
+    font-size: 100px;
+  }
+}
 
 .form label {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 500;
   margin: 1rem;
+}
+@media screen and (min-width: 3000px) {
+  .form label {
+    font-size: 70px;
+  }
 }
 
 .form input {
@@ -144,9 +208,24 @@ a:hover {
   border-radius: 20px;
   padding: 0.5rem;
 }
+@media screen and (min-width: 3000px) {
+  .form input {
+    font-size: 50px;
+  }
+}
 
 .btn {
   margin-top: 1rem;
+}
+@media screen and (min-width: 3000px) {
+  .btn {
+    width: 210px;
+    height: 123px;
+    font-size: initial;
+    font-weight: bold;
+    margin: 2rem;
+    border-radius: 10px;
+  }
 }
 
 #message {
@@ -154,6 +233,12 @@ a:hover {
   max-width: 80%;
   border-radius: 5px;
   padding: 0.5rem;
+}
+@media screen and (min-width: 3000px) {
+  #message {
+    width: 90%;
+    font-size: 50px;
+  }
 }
 
 .footer {
@@ -171,6 +256,11 @@ a:hover {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   font-family: "Source Sans Pro", sans-serif;
+}
+@media screen and (min-width: 3000px) {
+  .footer {
+    font-size: 70px;
+  }
 }
 
 .foot-svg {

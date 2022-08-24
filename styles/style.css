@@ -31,6 +31,14 @@
   grid-template-rows: auto auto auto auto auto auto auto auto auto;
   row-gap: 2rem;
 }
+@media screen and (min-width: 3000px) {
+  .main-container {
+    max-width: 80vw;
+    margin: 0 auto;
+    font-size: 70px;
+    row-gap: 4rem;
+  }
+}
 
 .header {
   grid-column: 1/4;
@@ -46,6 +54,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .header img {
+    width: 300px;
+    height: 300px;
+
   }
 }
 
@@ -60,6 +77,12 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
+}
+@media screen and (min-width: 3000px) {
+  .list {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
 }
 
 .list-unit {
@@ -112,6 +135,11 @@ a:hover {
   align-items: center;
   height: 300px;
 }
+@media screen and (min-width: 3000px) {
+  .products {
+    height: 1000px;
+  }
+}
 
 .products div {
   width: 30%;
@@ -135,6 +163,12 @@ a:hover {
 @media screen and (max-width: 800px) {
   .products div {
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 3000px) {
+  .products div {
+    height: 50%;
+    font-size: 100px;
   }
 }
 
@@ -206,12 +240,24 @@ a:hover {
 .maps h2 {
   margin: 1rem;
 }
+@media screen and (min-width: 3000px) {
+  .maps h2 {
+    font-size: 100px;
+    margin: 2rem;
+  }
+}
 
 #map {
   height: 300px;
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
+}
+@media screen and (min-width: 3000px) {
+  #map {
+    width: 50vw;
+    height: 50vh;
+  }
 }
 
 .newslatter {
@@ -231,14 +277,39 @@ a:hover {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+@media screen and (min-width: 3000px) {
+  .newslatter {
+    padding: 1rem;
+    height: 50vh;
+    font-size: 100px;
+    row-gap: 3rem;
+  }
+}
 
 .newslatter h2 {
   font-family: "Lato", sans-serif;
+}
+@media screen and (min-width: 3000px) {
+  .newslatter h2 {
+    font-size: 100px;
+  }
 }
 
 .label-form {
   font-family: "Source Sans Pro", sans-serif;
   margin-top: 1rem;
+}
+@media screen and (min-width: 3000px) {
+  .label-form {
+    font-size: 70px;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .newslatter button {
+    font-size: 50px;
+    padding: 3rem;
+  }
 }
 
 #email-field {
@@ -291,4 +362,16 @@ a:hover {
 
 .tw-link:hover {
   color: #1da1f2;
+
+}
+
+.surprise {
+  opacity: 0;
+  transition: all 2s;
+  font-weight: 700;
+}
+
+.surprise:hover {
+  opacity: 1;
+
 }/*# sourceMappingURL=style.css.map */
